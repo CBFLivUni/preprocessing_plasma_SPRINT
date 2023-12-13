@@ -1,0 +1,499 @@
+"","PG.Genes","PG.ProteinDescriptions","PG.UniProtIds","missing_count"
+"12","IGKV2D-24;IGKV2-24","Probable non-functional immunoglobulin kappa variable 2D-24;Immunoglobulin kappa variable 2-24","A0A075B6R9;A0A0C4DH68",2
+"15","IGKV3D-15","Immunoglobulin kappa variable 3D-15","A0A087WSY6",26
+"17","IGKV2-40;IGKV2D-40","Immunoglobulin kappa variable 2-40;Immunoglobulin kappa variable 2D-40","A0A087WW87;P01614",0
+"19","IGHV3-49","Immunoglobulin heavy variable 3-49","A0A0A0MS15",0
+"22","IGHV6-1","Immunoglobulin heavy variable 6-1","A0A0B4J1U7",25
+"26","IGHV3-73","Immunoglobulin heavy variable 3-73","A0A0B4J1V6",0
+"27","IGHV3-74","Immunoglobulin heavy variable 3-74","A0A0B4J1X5",2
+"30","IGHV3-72","Immunoglobulin heavy variable 3-72","A0A0B4J1Y9",8
+"31","GATD3B;GATD3","Putative glutamine amidotransferase-like class 1 domain-containing protein 3B, mitochondrial;Glutamine amidotransferase-like class 1 domain-containing protein 3, mitochondrial","A0A0B4J2D5;P0DPI2",8
+"39","IGHV4-28","Immunoglobulin heavy variable 4-28","A0A0C4DH34",20
+"40","IGHV3-35","Probable non-functional immunoglobulin heavy variable 3-35","A0A0C4DH35",13
+"42","IGHV5-51","Immunoglobulin heavy variable 5-51","A0A0C4DH38",24
+"44","IGKV1-8","Immunoglobulin kappa variable 1-8","A0A0C4DH67",32
+"57","WDR91","WD repeat-containing protein 91","A4D1P6",3
+"63","NEURL1B","E3 ubiquitin-protein ligase NEURL1B","A8MQ27",12
+"66","IGLL5","Immunoglobulin lambda-like polypeptide 5","B9A064",2
+"70","MASP2","Mannan-binding lectin serine protease 2","O00187",0
+"74","CLIC1","Chloride intracellular channel protein 1","O00299",35
+"75","PIK3CD","Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform","O00329",2
+"76","QSOX1","Sulfhydryl oxidase 1","O00391",7
+"78","CHL1","Neural cell adhesion molecule L1-like protein","O00533",0
+"81","PODXL","Podocalyxin","O00592",13
+"85","ISLR","Immunoglobulin superfamily containing leucine-rich repeat protein","O14498",34
+"86","GAPDHS","Glyceraldehyde-3-phosphate dehydrogenase, testis-specific","O14556",15
+"91","NRP1","Neuropilin-1","O14786",1
+"92","APOL1","Apolipoprotein L1","O14791",0
+"102","NCAM2","Neural cell adhesion molecule 2","O15394",19
+"105","PLXNB1","Plexin-B1","O43157",25
+"110","B4GAT1","Beta-1,4-glucuronyltransferase 1","O43505",3
+"114","CD5L","CD5 antigen-like","O43866",0
+"128","WDR1","WD repeat-containing protein 1","O75083",8
+"132","ICOSLG","ICOS ligand","O75144",0
+"142","FCN3","Ficolin-3","O75636",0
+"146","ATRN","Attractin","O75882",0
+"155","APOM","Apolipoprotein M","O95445",0
+"156","H6PD","GDH/6PGL endoplasmic bifunctional protein","O95479",0
+"157","VNN1","Pantetheinase","O95497",2
+"163","IL18BP","Interleukin-18-binding protein","O95998",30
+"165","PEX11B","Peroxisomal membrane protein 11B","O96011",32
+"169","LDHA","L-lactate dehydrogenase A chain","P00338",0
+"170","ALDH1A1","Aldehyde dehydrogenase 1A1","P00352",34
+"173","GSR","Glutathione reductase, mitochondrial","P00390",0
+"174","SOD1","Superoxide dismutase [Cu-Zn]","P00441",3
+"175","CP","Ceruloplasmin","P00450",0
+"177","F13A1","Coagulation factor XIII A chain","P00488",0
+"178","PNP","Purine nucleoside phosphorylase","P00491",18
+"181","EGFR","Epidermal growth factor receptor","P00533",4
+"182","PGK1","Phosphoglycerate kinase 1","P00558",3
+"184","F2","Prothrombin","P00734",0
+"185","C1R","Complement C1r subcomponent","P00736",0
+"186","HP","Haptoglobin","P00738",0
+"187","HPR","Haptoglobin-related protein","P00739",4
+"188","F9","Coagulation factor IX","P00740",0
+"189","F10","Coagulation factor X","P00742",0
+"190","CFD","Complement factor D","P00746",0
+"191","PLG","Plasminogen","P00747",0
+"192","F12","Coagulation factor XII","P00748",0
+"193","CFB","Complement factor B","P00751",0
+"194","CA1","Carbonic anhydrase 1","P00915",0
+"195","CA2","Carbonic anhydrase 2","P00918",0
+"198","SERPINC1","Antithrombin-III","P01008",0
+"199","SERPINA1","Alpha-1-antitrypsin","P01009",0
+"200","SERPINA3","Alpha-1-antichymotrypsin","P01011",0
+"201","AGT","Angiotensinogen","P01019",0
+"202","A2M","Alpha-2-macroglobulin","P01023",0
+"203","C3","Complement C3","P01024",0
+"204","C5","Complement C5","P01031",0
+"205","TIMP1","Metalloproteinase inhibitor 1","P01033",4
+"206","CST3","Cystatin-C","P01034",0
+"209","KNG1","Kininogen-1","P01042",0
+"211","IGF2","Insulin-like growth factor II","P01344",19
+"212","JCHAIN","Immunoglobulin J chain","P01591",0
+"217","IGKV1-5","Immunoglobulin kappa variable 1-5","P01602",2
+"218","IGKV3-20","Immunoglobulin kappa variable 3-20","P01619",0
+"219","IGKV3-15","Immunoglobulin kappa variable 3-15","P01624",1
+"220","IGLV1-47","Immunoglobulin lambda variable 1-47","P01700",11
+"221","IGLV1-51","Immunoglobulin lambda variable 1-51","P01701",32
+"228","IGLV3-25","Immunoglobulin lambda variable 3-25","P01717",34
+"230","IGHV1-69","Immunoglobulin heavy variable 1-69","P01742",3
+"235","IGHV3-53","Immunoglobulin heavy variable 3-53","P01767",0
+"236","IGHV3-30;IGHV3-30-5","Immunoglobulin heavy variable 3-30;Immunoglobulin heavy variable 3-30-5","P01768;P0DP03",0
+"237","IGHV3-7","Immunoglobulin heavy variable 3-7","P01780",0
+"238","IGHV3-9","Immunoglobulin heavy variable 3-9","P01782",2
+"241","PIGR","Polymeric immunoglobulin receptor","P01833",35
+"242","IGKC","Immunoglobulin kappa constant","P01834",0
+"244","IGHG1","Immunoglobulin heavy constant gamma 1","P01857",0
+"245","IGHG2","Immunoglobulin heavy constant gamma 2","P01859",0
+"246","IGHG3","Immunoglobulin heavy constant gamma 3","P01860",5
+"247","IGHG4","Immunoglobulin heavy constant gamma 4","P01861",1
+"248","IGHM","Immunoglobulin heavy constant mu","P01871",0
+"249","IGHA1","Immunoglobulin heavy constant alpha 1","P01876",0
+"250","IGHA2","Immunoglobulin heavy constant alpha 2","P01877",0
+"253","HLA-H","Putative HLA class I histocompatibility antigen, alpha chain H","P01893",10
+"254","HBD","Hemoglobin subunit delta","P02042",11
+"257","COL3A1","Collagen alpha-1(III) chain","P02461",16
+"258","KRT14","Keratin, type I cytoskeletal 14","P02533",0
+"259","KRT6A","Keratin, type II cytoskeletal 6A","P02538",0
+"262","APOA1","Apolipoprotein A-I","P02647",0
+"263","APOE","Apolipoprotein E","P02649",0
+"264","APOA2","Apolipoprotein A-II","P02652",0
+"265","APOC1","Apolipoprotein C-I","P02654",0
+"266","APOC2","Apolipoprotein C-II","P02655",0
+"267","APOC3","Apolipoprotein C-III","P02656",0
+"268","FGA","Fibrinogen alpha chain","P02671",0
+"269","FGB","Fibrinogen beta chain","P02675",0
+"270","FGG","Fibrinogen gamma chain","P02679",0
+"273","CRP","C-reactive protein","P02741",0
+"274","APCS","Serum amyloid P-component","P02743",0
+"275","C1QA","Complement C1q subcomponent subunit A","P02745",0
+"276","C1QB","Complement C1q subcomponent subunit B","P02746",0
+"277","C1QC","Complement C1q subcomponent subunit C","P02747",0
+"278","C9","Complement component C9","P02748",0
+"279","APOH","Beta-2-glycoprotein 1","P02749",0
+"280","LRG1","Leucine-rich alpha-2-glycoprotein","P02750",0
+"281","FN1","Fibronectin","P02751",0
+"282","RBP4","Retinol-binding protein 4","P02753",0
+"283","AMBP","Protein AMBP","P02760",0
+"284","ORM1","Alpha-1-acid glycoprotein 1","P02763",0
+"285","AHSG","Alpha-2-HS-glycoprotein","P02765",0
+"286","TTR","Transthyretin","P02766",0
+"287","ALB","Albumin","P02768",0
+"288","GC","Vitamin D-binding protein","P02774",0
+"289","PPBP","Platelet basic protein","P02775",8
+"291","TFRC","Transferrin receptor protein 1","P02786",0
+"292","TF","Serotransferrin","P02787",0
+"293","LTF","Lactotransferrin","P02788",7
+"294","HPX","Hemopexin","P02790",0
+"295","FTL","Ferritin light chain","P02792",26
+"298","F11","Coagulation factor XI","P03951",0
+"299","KLKB1","Plasma kallikrein","P03952",0
+"301","C4BPA","C4b-binding protein alpha chain","P04003",0
+"302","VTN","Vitronectin","P04004",0
+"303","CAT","Catalase","P04040",0
+"304","FUCA1","Tissue alpha-L-fucosidase","P04066",5
+"305","PROC","Vitamin K-dependent protein C","P04070",0
+"306","ALDOA","Fructose-bisphosphate aldolase A","P04075",0
+"310","APOB","Apolipoprotein B-100","P04114",0
+"312","LCAT","Phosphatidylcholine-sterol acyltransferase","P04180",0
+"313","HRG","Histidine-rich glycoprotein","P04196",0
+"314","IGLV7-43","Immunoglobulin lambda variable 7-43","P04211",3
+"315","A1BG","Alpha-1B-glycoprotein","P04217",0
+"316","KRT6B","Keratin, type II cytoskeletal 6B","P04259",0
+"317","KRT1","Keratin, type II cytoskeletal 1","P04264",0
+"318","VWF","von Willebrand factor","P04275",0
+"319","SHBG","Sex hormone-binding globulin","P04278",25
+"321","GAPDH","Glyceraldehyde-3-phosphate dehydrogenase","P04406",0
+"330","ALDOB","Fructose-bisphosphate aldolase B","P05062",0
+"333","APOD","Apolipoprotein D","P05090",0
+"335","S100A8","Protein S100-A8","P05109",0
+"337","SERPINA5","Plasma serine protease inhibitor","P05154",0
+"338","SERPING1","Plasma protease C1 inhibitor","P05155",0
+"339","CFI","Complement factor I","P05156",0
+"340","F13B","Coagulation factor XIII B chain","P05160",0
+"345","ICAM1","Intercellular adhesion molecule 1","P05362",0
+"347","REG1A","Lithostathine-1-alpha","P05451",16
+"348","CLEC3B","Tetranectin","P05452",0
+"349","SERPINA7","Thyroxine-binding globulin","P05543",0
+"350","SERPIND1","Heparin cofactor 2","P05546",0
+"351","ITGB1","Integrin beta-1","P05556",0
+"355","BCHE","Cholinesterase","P06276",0
+"357","IGKV4-1","Immunoglobulin kappa variable 4-1","P06312",0
+"358","IGHV4-34","Immunoglobulin heavy variable 4-34","P06331",1
+"359","GSN","Gelsolin","P06396",0
+"360","ATP5F1B","ATP synthase subunit beta, mitochondrial","P06576",34
+"361","C2","Complement C2","P06681",0
+"362","S100A9","Protein S100-A9","P06702",0
+"363","S100A6","Protein S100-A6","P06703",20
+"364","APOA4","Apolipoprotein A-IV","P06727",0
+"365","CKM","Creatine kinase M-type","P06732",3
+"366","ENO1","Alpha-enolase","P06733",12
+"368","GPI","Glucose-6-phosphate isomerase","P06744",13
+"369","TPM3","Tropomyosin alpha-3 chain","P06753",32
+"373","LDHB","L-lactate dehydrogenase B chain","P07195",0
+"375","PROS1","Vitamin K-dependent protein S","P07225",0
+"376","P4HB","Protein disulfide-isomerase","P07237",4
+"379","CSF1R","Macrophage colony-stimulating factor 1 receptor","P07333",0
+"380","CTSD","Cathepsin D","P07339",1
+"382","C8A","Complement component C8 alpha chain","P07357",0
+"383","C8B","Complement component C8 beta chain","P07358",0
+"384","GP1BA","Platelet glycoprotein Ib alpha chain","P07359",0
+"385","C8G","Complement component C8 gamma chain","P07360",0
+"389","PRSS1","Serine protease 1","P07477",3
+"391","PFN1","Profilin-1","P07737",2
+"392","BPGM","Bisphosphoglycerate mutase","P07738",12
+"393","CTSB","Cathepsin B","P07858",10
+"395","UMOD","Uromodulin","P07911",10
+"396","LAMB1","Laminin subunit beta-1","P07942",2
+"399","THBS1","Thrombospondin-1","P07996",22
+"400","RNASE1","Ribonuclease pancreatic","P07998",0
+"404","SERPINA6","Corticosteroid-binding globulin","P08185",0
+"405","SLC3A2","4F2 cell-surface antigen heavy chain","P08195",0
+"411","SOD3","Extracellular superoxide dismutase [Cu-Zn]","P08294",0
+"415","LPA","Apolipoprotein(a)","P08519",0
+"417","CD14","Monocyte differentiation antigen CD14","P08571",0
+"418","MET","Hepatocyte growth factor receptor","P08581",18
+"419","CFH","Complement factor H","P08603",0
+"420","FCGR3A","Low affinity immunoglobulin gamma Fc region receptor III-A","P08637",0
+"422","SERPINF2","Alpha-2-antiplasmin","P08697",0
+"423","F7","Coagulation factor VII","P08709",0
+"424","KRT7","Keratin, type II cytoskeletal 7","P08729",19
+"426","KRT16","Keratin, type I cytoskeletal 16","P08779",20
+"431","DBH","Dopamine beta-hydroxylase","P09172",2
+"435","SPARC","SPARC","P09486",21
+"439","PDGFRB","Platelet-derived growth factor receptor beta","P09619",18
+"443","C1S","Complement C1s subcomponent","P09871",0
+"444","LTA4H","Leukotriene A-4 hydrolase","P09960",1
+"446","C4A","Complement C4-A","P0C0L4",0
+"447","C4B_2","Complement C4-B","P0C0L5",0
+"451","PGA4;PGA3;PGA5","Pepsin A-4;Pepsin A-3;Pepsin A-5","P0DJD7;P0DJD8;P0DJD9",8
+"452","SAA1","Serum amyloid A-1 protein","P0DJI8",0
+"455","IGLC2","Immunoglobulin lambda constant 2","P0DOY2",0
+"458","CALM1;CALM2;CALM3","Calmodulin-1;Calmodulin-2;Calmodulin-3","P0DP23;P0DP24;P0DP25",0
+"463","AMY1B;AMY1C;AMY1A","Alpha-amylase 1B;Alpha-amylase 1C;Alpha-amylase 1A","P0DTE7;P0DTE8;P0DUB6",24
+"465","SRGN","Serglycin","P10124",13
+"466","RNASE2","Non-secretory ribonuclease","P10153",12
+"469","PTPRF","Receptor-type tyrosine-protein phosphatase F","P10586",9
+"470","TXN","Thioredoxin","P10599",12
+"471","C7","Complement component C7","P10643",0
+"474","KIT","Mast/stem cell growth factor receptor Kit","P10721",0
+"477","CLU","Clusterin","P10909",0
+"478","HSPA5","Endoplasmic reticulum chaperone BiP","P11021",0
+"479","ACP2","Lysosomal acid phosphatase","P11117",6
+"480","HSPA8","Heat shock cognate 71 kDa protein","P11142",0
+"484","MBL2","Mannose-binding protein C","P11226",0
+"486","LAMP1","Lysosome-associated membrane glycoprotein 1","P11279",0
+"491","IGF2R","Cation-independent mannose-6-phosphate receptor","P11717",0
+"493","KRT3","Keratin, type II cytoskeletal 3","P12035",1
+"494","COL6A1","Collagen alpha-1(VI) chain","P12109",20
+"496","COL6A3","Collagen alpha-3(VI) chain","P12111",4
+"498","F5","Coagulation factor V","P12259",0
+"500","FCGR2A","Low affinity immunoglobulin gamma Fc region receptor II-a","P12318",4
+"503","ACE","Angiotensin-converting enzyme","P12821",0
+"504","CDH1","Cadherin-1","P12830",1
+"506","PEPD","Xaa-Pro dipeptidase","P12955",0
+"508","LAMP2","Lysosome-associated membrane glycoprotein 2","P13473",0
+"509","RNH1","Ribonuclease inhibitor","P13489",22
+"511","NCAM1","Neural cell adhesion molecule 1","P13591",0
+"512","ICAM2","Intercellular adhesion molecule 2","P13598",0
+"514","KRT10","Keratin, type I cytoskeletal 10","P13645",0
+"515","KRT13","Keratin, type I cytoskeletal 13","P13646",1
+"516","KRT5","Keratin, type II cytoskeletal 5","P13647",1
+"518","C6","Complement component C6","P13671",0
+"519","CEACAM1","Carcinoembryonic antigen-related cell adhesion molecule 1","P13688",29
+"520","ALAD","Delta-aminolevulinic acid dehydratase","P13716",27
+"521","PRG2","Bone marrow proteoglycan","P13727",1
+"522","LCP1","Plastin-2","P13796",0
+"527","SELL","L-selectin","P14151",0
+"530","PRKCSH","Glucosidase 2 subunit beta","P14314",6
+"533","NID1","Nidogen-1","P14543",17
+"534","PKM","Pyruvate kinase PKM","P14618",0
+"535","HSP90B1","Endoplasmin","P14625",17
+"540","JUP","Junction plakoglobin","P14923",18
+"542","ANPEP","Aminopeptidase N","P15144",0
+"543","PVR","Poliovirus receptor","P15151",0
+"545","CPN1","Carboxypeptidase N catalytic chain","P15169",0
+"548","NME1","Nucleoside diphosphate kinase A","P15531",8
+"551","DSP","Desmoplakin","P15924",2
+"553","CD44","CD44 antigen","P16070",0
+"555","ACAN","Aggrecan core protein","P16112",18
+"562","FAH","Fumarylacetoacetase","P16930",0
+"563","GOT1","Aspartate aminotransferase, cytoplasmic","P17174",19
+"564","ENG","Endoglin","P17813",2
+"567","IGFBP3","Insulin-like growth factor-binding protein 3","P17936",0
+"569","VCL","Vinculin","P18206",26
+"570","LBP","Lipopolysaccharide-binding protein","P18428",5
+"577","VCAM1","Vascular cell adhesion protein 1","P19320",0
+"580","ORM2","Alpha-1-acid glycoprotein 2","P19652",0
+"581","ITIH2","Inter-alpha-trypsin inhibitor heavy chain H2","P19823",0
+"582","ITIH1","Inter-alpha-trypsin inhibitor heavy chain H1","P19827",0
+"585","CR2","Complement receptor type 2","P20023",12
+"593","PZP","Pregnancy zone protein","P20742",0
+"594","C4BPB","C4b-binding protein beta chain","P20851",0
+"599","FLNA","Filamin-A","P21333",4
+"602","TNXB","Tenascin-X","P22105",0
+"604","GPX3","Glutathione peroxidase 3","P22352",0
+"607","CPN2","Carboxypeptidase N subunit 2","P22792",0
+"608","PROZ","Vitamin K-dependent protein Z","P22891",0
+"609","MRC1","Macrophage mannose receptor 1","P22897",1
+"610","IGHV1-2","Immunoglobulin heavy variable 1-2","P23083",5
+"611","CES1","Liver carboxylesterase 1","P23141",17
+"612","FBLN1","Fibulin-1","P23142",0
+"619","PTPRG","Receptor-type tyrosine-protein phosphatase gamma","P23470",0
+"628","IGFBP6","Insulin-like growth factor-binding protein 6","P24592",15
+"632","TNC","Tenascin","P24821",0
+"633","AZGP1","Zinc-alpha-2-glycoprotein","P25311",0
+"636","CTSS","Cathepsin S","P25774",7
+"637","PSMA1","Proteasome subunit alpha type-1","P25786",3
+"640","PSMA4","Proteasome subunit alpha type-4","P25789",25
+"642","MSN","Moesin","P26038",20
+"643","S100A4","Protein S100-A4","P26447",22
+"645","MST1","Hepatocyte growth factor-like protein","P26927",2
+"648","PON1","Serum paraoxonase/arylesterase 1","P27169",0
+"651","DPP4","Dipeptidyl peptidase 4","P27487",0
+"652","CALR","Calreticulin","P27797",1
+"654","CFP","Properdin","P27918",0
+"657","PSMA5","Proteasome subunit alpha type-5","P28066",16
+"659","PSMB6","Proteasome subunit beta type-6","P28072",19
+"665","PTPRM","Receptor-type tyrosine-protein phosphatase mu","P28827",3
+"667","TKT","Transketolase","P29401",10
+"669","SERPINA4","Kallistatin","P29622",0
+"671","BLVRB","Flavin reductase (NADPH)","P30043",1
+"676","PEBP1","Phosphatidylethanolamine-binding protein 1","P30086",20
+"677","PDIA3","Protein disulfide-isomerase A3","P30101",27
+"679","AXL","Tyrosine-protein kinase receptor UFO","P30530",29
+"684","S100A7","Protein S100-A7","P31151",34
+"690","YWHAB","14-3-3 protein beta/alpha","P31946",0
+"694","PRDX2","Peroxiredoxin-2","P32119",0
+"696","ICAM3","Intercellular adhesion molecule 3","P32942",1
+"698","CDH5","Cadherin-5","P33151",0
+"700","MAN1A1","Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA","P33908",0
+"702","RNASE4","Ribonuclease 4","P34096",1
+"704","PRSS3","Trypsin-3","P35030",1
+"707","THBS4","Thrombospondin-4","P35443",0
+"708","KRT9","Keratin, type I cytoskeletal 9","P35527",0
+"709","SAA4","Serum amyloid A-4 protein","P35542",0
+"710","FBN1","Fibrillin-1","P35555",27
+"713","IGFALS","Insulin-like growth factor-binding protein complex acid labile subunit","P35858",0
+"714","KRT2","Keratin, type II cytoskeletal 2 epidermal","P35908",0
+"715","FLT4","Vascular endothelial growth factor receptor 3","P35916",6
+"719","SERPINF1","Pigment epithelium-derived factor","P36955",0
+"720","CFHR2","Complement factor H-related protein 2","P36980",2
+"723","TAGLN2","Transgelin-2","P37802",19
+"724","TALDO1","Transaldolase","P37837",6
+"731","CAPG","Macrophage-capping protein","P40121",2
+"732","IL6ST","Interleukin-6 receptor subunit beta","P40189",0
+"734","MDH1","Malate dehydrogenase, cytoplasmic","P40925",10
+"736","PTGDS","Prostaglandin-H2 D-isomerase","P41222",0
+"742","PRCP","Lysosomal Pro-X carboxypeptidase","P42785",3
+"744","MCAM","Cell surface glycoprotein MUC18","P43121",0
+"745","BTD","Biotinidase","P43251",0
+"747","AFM","Afamin","P43652",0
+"761","GSS","Glutathione synthetase","P48637",24
+"763","MASP1","Mannan-binding lectin serine protease 1","P48740",0
+"769","COMP","Cartilage oligomeric matrix protein","P49747",1
+"771","SELENOP","Selenoprotein P","P49908",0
+"772","CAMP","Cathelicidin antimicrobial peptide","P49913",0
+"774","GDI2","Rab GDP dissociation inhibitor beta","P50395",29
+"783","LUM","Lumican","P51884",0
+"785","PGD","6-phosphogluconate dehydrogenase, decarboxylating","P52209",2
+"793","CRISP3","Cysteine-rich secretory protein 3","P54108",0
+"794","CACNA2D1","Voltage-dependent calcium channel subunit alpha-2/delta-1","P54289",0
+"797","NAGLU","Alpha-N-acetylglucosaminidase","P54802",4
+"799","APOC4","Apolipoprotein C-IV","P55056",0
+"800","PLTP","Phospholipid transfer protein","P55058",0
+"805","CDH13","Cadherin-13","P55290",0
+"812","DEFA1B;DEFA3","Neutrophil defensin 1;Neutrophil defensin 3","P59665;P59666",2
+"815","TPI1","Triosephosphate isomerase","P60174",3
+"817","ACTB;ACTG1","Actin, cytoplasmic 1;Actin, cytoplasmic 2","P60709;P63261",0
+"832","LYZ","Lysozyme C","P61626",0
+"833","B2M","Beta-2-microglobulin","P61769",0
+"841","YWHAE","14-3-3 protein epsilon","P62258",22
+"845","TMSB4X","Thymosin beta-4","P62328",26
+"852","PPIA","Peptidyl-prolyl cis-trans isomerase A","P62937",0
+"854","RPS27A","Ubiquitin-40S ribosomal protein S27a","P62979",27
+"856","YWHAZ","14-3-3 protein zeta/delta","P63104",0
+"859","TPM4","Tropomyosin alpha-4 chain","P67936",2
+"862","ACTA1","Actin, alpha skeletal muscle","P68133",0
+"867","HBB","Hemoglobin subunit beta","P68871",0
+"868","HBG1","Hemoglobin subunit gamma-1","P69891",0
+"870","HBA2","Hemoglobin subunit alpha","P69905",0
+"874","GSTO1","Glutathione S-transferase omega-1","P78417",0
+"875","GPLD1","Phosphatidylinositol-glycan-specific phospholipase D","P80108",0
+"876","LCN2","Neutrophil gelatinase-associated lipocalin","P80188",3
+"880","DCD","Dermcidin","P81605",3
+"883","HSPG2","Basement membrane-specific heparan sulfate proteoglycan core protein","P98160",0
+"886","CTBS","Di-N-acetylchitobiase","Q01459",0
+"887","FABP5","Fatty acid-binding protein 5","Q01469",12
+"891","DSG1","Desmoglein-1","Q02413",28
+"892","DSC2","Desmocollin-2","Q02487",5
+"893","CFHR3","Complement factor H-related protein 3","Q02985",0
+"896","CFHR1","Complement factor H-related protein 1","Q03591",0
+"900","HGFAC","Hepatocyte growth factor activator","Q04756",0
+"904","ITIH3","Inter-alpha-trypsin inhibitor heavy chain H3","Q06033",0
+"905","PRDX1","Peroxiredoxin-1","Q06830",17
+"908","ENPEP","Glutamyl aminopeptidase","Q07075",0
+"909","LRP1","Prolow-density lipoprotein receptor-related protein 1","Q07954",0
+"910","TGM3","Protein-glutamine gamma-glutamyltransferase E","Q08188",22
+"911","LGALS3BP","Galectin-3-binding protein","Q08380",0
+"912","DSC1","Desmocollin-1","Q08554",10
+"914","FGL1","Fibrinogen-like protein 1","Q08830",3
+"917","BST1","ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2","Q10588",1
+"918","EFEMP1","EGF-containing fibulin-like extracellular matrix protein 1","Q12805",0
+"920","CNTN1","Contactin-1","Q12860",0
+"922","FAP","Prolyl endopeptidase FAP","Q12884",6
+"923","LMAN2","Vesicular integral-membrane protein VIP36","Q12907",11
+"924","PTPRJ","Receptor-type tyrosine-protein phosphatase eta","Q12913",0
+"927","PLA2G7","Platelet-activating factor acetylhydrolase","Q13093",19
+"928","SPP2","Secreted phosphoprotein 24","Q13103",1
+"931","MMRN1","Multimerin-1","Q13201",0
+"933","SELENBP1","Methanethiol oxidase","Q13228",0
+"938","PTPRS","Receptor-type tyrosine-protein phosphatase S","Q13332",33
+"942","ART3","Ecto-ADP-ribosyltransferase 3","Q13508",8
+"945","ALCAM","CD166 antigen","Q13740",0
+"946","APOF","Apolipoprotein F","Q13790",0
+"949","ENPP2","Ectonucleotide pyrophosphatase/phosphodiesterase family member 2","Q13822",1
+"951","DDX39B","Spliceosome RNA helicase DDX39B","Q13838",25
+"952","BLMH","Bleomycin hydrolase","Q13867",6
+"954","DAG1","Dystroglycan 1","Q14118",6
+"963","SPARCL1","SPARC-like protein 1","Q14515",1
+"964","HABP2","Hyaluronan-binding protein 2","Q14520",0
+"968","ITIH4","Inter-alpha-trypsin inhibitor heavy chain H4","Q14624",0
+"972","GANAB","Neutral alpha-glucosidase AB","Q14697",23
+"973","KCNAB1","Voltage-gated potassium channel subunit beta-1","Q14722",31
+"975","GPNMB","Transmembrane glycoprotein NMB","Q14956",11
+"982","PCOLCE","Procollagen C-endopeptidase enhancer 1","Q15113",28
+"984","PON3","Serum paraoxonase/lactonase 3","Q15166",8
+"991","FCN2","Ficolin-2","Q15485",0
+"993","TGFBI","Transforming growth factor-beta-induced protein ig-h3","Q15582",0
+"994","CST6","Cystatin-M","Q15828",17
+"995","ADIPOQ","Adiponectin","Q15848",0
+"1000","ECM1","Extracellular matrix protein 1","Q16610",0
+"1003","MAN2A1","Alpha-mannosidase 2","Q16706",4
+"1008","AOC3","Membrane primary amine oxidase","Q16853",0
+"1010","KRT71","Keratin, type II cytoskeletal 71","Q3SY84",22
+"1020","FLG2","Filaggrin-2","Q5D862",15
+"1021","VWA2","von Willebrand factor A domain-containing protein 2","Q5GFL6",6
+"1026","UBR4","E3 ubiquitin-protein ligase UBR4","Q5T4S7",12
+"1047","VASN","Vasorin","Q6EMK4",0
+"1050","JADE1","Protein Jade-1","Q6IE81",27
+"1058","PLXDC2","Plexin domain-containing protein 2","Q6UX71",0
+"1059","PI16","Peptidase inhibitor 16","Q6UXB8",0
+"1062","CD109","CD109 antigen","Q6YHK3",0
+"1067","RBM43","RNA-binding protein 43","Q6ZSC3",8
+"1072","ADAMTS13","A disintegrin and metalloproteinase with thrombospondin motifs 13","Q76LX8",1
+"1075","ZNF550","Zinc finger protein 550","Q7Z398",2
+"1077","KRT27","Keratin, type I cytoskeletal 27","Q7Z3Y8",0
+"1084","KRT77","Keratin, type II cytoskeletal 1b","Q7Z794",25
+"1085","ABI3BP","Target of Nesh-SH3","Q7Z7G0",0
+"1087","MEGF8","Multiple epidermal growth factor-like domains protein 8","Q7Z7M0",1
+"1090","ADGRG6","Adhesion G-protein coupled receptor G6","Q86SQ4",4
+"1093","OAF","Out at first protein homolog","Q86UD1",10
+"1094","RTN4RL2","Reticulon-4 receptor-like 2","Q86UN3",28
+"1098","CD163","Scavenger receptor cysteine-rich type 1 protein M130","Q86VB7",0
+"1103","HRNR","Hornerin","Q86YZ3",20
+"1105","PLXDC1","Plexin domain-containing protein 1","Q8IUK5",23
+"1113","CNTN4","Contactin-4","Q8IWV2",24
+"1117","ADGRF5","Adhesion G protein-coupled receptor F5","Q8IZF2",8
+"1123","KRT78","Keratin, type II cytoskeletal 78","Q8N1N4",6
+"1125","SCML4","Sex comb on midleg-like protein 4","Q8N228",19
+"1129","LILRA3","Leukocyte immunoglobulin-like receptor subfamily A member 3","Q8N6C8",8
+"1130","CBLL2","E3 ubiquitin-protein ligase CBLL2","Q8N7E2",0
+"1135","PCSK9","Proprotein convertase subtilisin/kexin type 9","Q8NBP7",0
+"1143","KMT2C","Histone-lysine N-methyltransferase 2C","Q8NEZ4",0
+"1160","ITLN1","Intelectin-1","Q8WWA0",10
+"1161","OIT3","Oncoprotein-induced transcript 3 protein","Q8WWZ8",11
+"1162","TTN","Titin","Q8WZ42",15
+"1163","ROBO4","Roundabout homolog 4","Q8WZ75",3
+"1166","CFHR4","Complement factor H-related protein 4","Q92496",0
+"1174","GGH","Gamma-glutamyl hydrolase","Q92820",0
+"1175","NRCAM","Neuronal cell adhesion molecule","Q92823",6
+"1177","NEO1","Neogenin","Q92859",17
+"1180","PRG4","Proteoglycan 4","Q92954",0
+"1189","CCDC126","Coiled-coil domain-containing protein 126","Q96EE4",11
+"1192","CPB2","Carboxypeptidase B2","Q96IY4",0
+"1193","CNDP1","Beta-Ala-His dipeptidase","Q96KN2",0
+"1198","PGLYRP2","N-acetylmuramoyl-L-alanine amidase","Q96PD5",0
+"1203","CEP89","Centrosomal protein of 89 kDa","Q96ST8",32
+"1209","PARK7","Parkinson disease protein 7","Q99497",28
+"1210","OSMR","Oncostatin-M-specific receptor subunit beta","Q99650",5
+"1211","OLFM1","Noelin","Q99784",0
+"1225","FUCA2","Plasma alpha-L-fucosidase","Q9BTY2",26
+"1226","MENT","Protein MENT","Q9BUN1",32
+"1230","COLEC11","Collectin-11","Q9BWP8",0
+"1231","CFHR5","Complement factor H-related protein 5","Q9BXR6",0
+"1233","CADM1","Cell adhesion molecule 1","Q9BY67",2
+"1246","SH3BGRL3","SH3 domain-binding glutamic acid-rich-like protein 3","Q9H299",11
+"1247","DPEP2","Dipeptidase 2","Q9H4A9",0
+"1249","GLIPR2","Golgi-associated plant pathogenesis-related protein 1","Q9H4G4",7
+"1253","MMRN2","Multimerin-2","Q9H8L6",0
+"1264","CD248","Endosialin","Q9HCU0",28
+"1266","APMAP","Adipocyte plasma membrane-associated protein","Q9HDC9",1
+"1268","IL1RAP","Interleukin-1 receptor accessory protein","Q9NPH3",0
+"1269","SEMA4B","Semaphorin-4B","Q9NPR2",2
+"1270","CD93","Complement component C1q receptor","Q9NPY3",1
+"1271","CRTAC1","Cartilage acidic protein 1","Q9NQ79",1
+"1276","AGPAT3","1-acyl-sn-glycerol-3-phosphate acyltransferase gamma","Q9NRZ7",34
+"1280","CBLN4","Cerebellin-4","Q9NTU7",29
+"1287","B3GNT2","N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase 2","Q9NY97",3
+"1290","ADA2","Adenosine deaminase 2","Q9NZK5",0
+"1291","C1RL","Complement C1r subcomponent-like protein","Q9NZP8",0
+"1292","CALML5","Calmodulin-like protein 5","Q9NZT1",9
+"1295","CNTN3","Contactin-3","Q9P232",9
+"1304","EXTL2","Exostosin-like 2","Q9UBQ6",2
+"1305","CTSZ","Cathepsin Z","Q9UBR2",6
+"1307","FBLN5","Fibulin-5","Q9UBX5",24
+"1310","FETUB","Fetuin-B","Q9UGM5",0
+"1312","PCYOX1","Prenylcysteine oxidase 1","Q9UHG3",0
+"1314","CPA4","Carboxypeptidase A4","Q9UI42",25
+"1320","SERPINA10","Protein Z-dependent protease inhibitor","Q9UK55",0
+"1324","HEG1","Protein HEG homolog 1","Q9ULI3",23
+"1329","PROCR","Endothelial protein C receptor","Q9UNN8",0
+"1330","MINPP1","Multiple inositol polyphosphate phosphatase 1","Q9UNW1",0
+"1338","TLN1","Talin-1","Q9Y490",33
+"1341","HYOU1","Hypoxia up-regulated protein 1","Q9Y4L1",1
+"1351","LYVE1","Lymphatic vessel endothelial hyaluronic acid receptor 1","Q9Y5Y7",0
+"1356","CPQ","Carboxypeptidase Q","Q9Y646",14
+"1358","FCGBP","IgGFc-binding protein","Q9Y6R7",0
+"1359","COLEC10","Collectin-10","Q9Y6Z7",1
