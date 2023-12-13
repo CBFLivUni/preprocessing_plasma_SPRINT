@@ -9,8 +9,6 @@
 !sorted_IQR.csv
 !README.md
 
-!*/
-
 !*/figures/combat_vsn/*
 !*/figures/depl_combat_vsn/*
 !*/figures/depl_hk_vsn/*
@@ -20,3 +18,5 @@
 !*/figures/log_filter/*
 !*/figures/withinvsn_combat/*
 !*/figures/withinvsn_hk/*
+
+!*/
