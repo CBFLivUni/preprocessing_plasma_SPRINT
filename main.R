@@ -65,7 +65,7 @@ least_diff <- c("Cathepsin G", "Myeloblastin",
         "Matrix metalloproteinase-9")
 
 # proteins with lowest coeff variation across batches
-low_coeff_res <- low_coeff_var_p(log2_df, pc = 0.03)
+low_coeff_res <- low_coeff_var_p(log2_df, pc = 0.05, max_p = 5, data_cols)
 low_coeff_var <- low_coeff_res$names
 
 # plot selected proteins in boxplots

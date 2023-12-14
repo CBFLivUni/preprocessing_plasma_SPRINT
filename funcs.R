@@ -638,9 +638,21 @@ run_pipelines <- function(pipelines, df_, og_df, meta_df_, data_cols, meta_cols,
     mf_data <- plot_figures(df_to_process, og_df, meta_df_, data_cols, f_name_prefix = paste(dir_path, "/log_filter/", sep=""), selected_p_)  
     write.csv(x = df_to_process, file = paste(dir_path, "/log_filter/", "df.csv", sep = ""))
 
+    # if not depleted during pipeline, then also write csv of dfs with depleted removed.
+    if (grepl("depl", p, fixed = TRUE) == FALSE){
+      depl_df_ <- remove_depleted(df_to_process)
+      write.csv(x = depl_df_, file = paste(dir_path, "/log_filter/", "rm_depl_df.csv", sep = ""))
+    }
+
     # write misforest imputed data to csv
     mf_df <- cbind(df_to_process[, meta_cols], t(as.matrix(mf_data)))
     write.csv(x = mf_df, file = paste(dir_path, "/log_filter/", "mf_df.csv", sep = ""))
+
+    # if not depleted during pipeline, then also write csv of dfs with depleted removed.
+    if (grepl("depl", p, fixed = TRUE) == FALSE){
+      depl_mf_df_ <- remove_depleted(mf_df)
+      write.csv(x = depl_mf_df_, file = paste(dir_path, "/log_filter/", "rm_depl_mf_df.csv", sep = ""))
+    }
 
     # get one pipeline
     all_processes <- str_split(p, "_")
@@ -692,7 +704,7 @@ run_pipelines <- function(pipelines, df_, og_df, meta_df_, data_cols, meta_cols,
 
       } else if (process == "hk"){
         # correct batches based on stable proteins with low coeff var.
-        norm_df <- norm_to_low_coeff(df_to_process, og_df, pc = 0.03, meta_df_, paste(dir_path, "/", p, sep=""))
+        norm_df <- norm_to_low_coeff(df_to_process, og_df, pc = 0.05, max_p = 5, meta_df_, paste(dir_path, "/", p, sep=""), data_cols)
         # add back non data cols
         df_to_process <- cbind(norm_df, df_to_process[, meta_cols])
 
@@ -741,9 +753,21 @@ run_pipelines <- function(pipelines, df_, og_df, meta_df_, data_cols, meta_cols,
       # write csv data
       write.csv(x = df_to_process, file = paste(f_name_prefix, "df.csv", sep = ""))
 
+      # if not depleted during pipeline, then also write csv of dfs with depleted removed.
+      if (grepl("depl", p, fixed = TRUE) == FALSE){
+        depl_df_ <- remove_depleted(df_to_process)
+        write.csv(x = depl_df_, file = paste(f_name_prefix, "rm_depl_df.csv", sep = ""))
+      }
+
       # write misforest imputed data to csv
       mf_df <- cbind(df_to_process[, meta_cols], t(as.matrix(mf_data)))
       write.csv(x = mf_df, file = paste(f_name_prefix, "mf_df.csv", sep = ""))
+
+      # if not depleted during pipeline, then also write csv of dfs with depleted removed.
+      if (grepl("depl", p, fixed = TRUE) == FALSE){
+        depl_mf_df_ <- remove_depleted(mf_df)
+        write.csv(x = depl_mf_df_, file = paste(f_name_prefix, "rm_depl_mf_df.csv", sep = ""))
+      }
 
     }
 
@@ -757,8 +781,9 @@ run_pipelines <- function(pipelines, df_, og_df, meta_df_, data_cols, meta_cols,
   return(iqr_df)
 }
 
-low_coeff_var_p <- function(df_, pc = 0.01){
+low_coeff_var_p <- function(df_, pc = 0.05, max_p = 5, data_cols) {
   # find the lowest coefficient of variation proteins across plates
+  # Then select the most abundant "max_p" proteins.
   # pc is the top x % of variation to select
 
   p1_df <- df_[, grep("^P1", names(df_))]
@@ -771,7 +796,20 @@ low_coeff_var_p <- function(df_, pc = 0.01){
   p3_pro_idx <- idx_low_cv_p(p3_df, pc = pc)
 
   # intersect across all plates
-  low_idx_pro_idx <- intersect(intersect(p1_pro_idx, p2_pro_idx), p3_pro_idx)
+  intersect_idx <- intersect(intersect(p1_pro_idx, p2_pro_idx), p3_pro_idx)
+
+  intersect_df <- df_[intersect_idx, data_cols]
+
+  intersect_df$mean <- rowMeans(intersect_df)
+
+  # rank by mean
+  intersect_df <- intersect_df[order(intersect_df$mean, decreasing = TRUE), ]
+
+  # drop proteins with mean < 10, slightly arbitrary threshold to ensure well above LOD
+  intersect_df <- intersect_df[intersect_df$mean >= 10, ]
+
+  # take only top 'max_p' number of proteins.
+  low_idx_pro_idx <- rownames(intersect_df)[1 : max_p]
 
   # get protein name from idx
   low_cv_pro_names <- df_[low_idx_pro_idx, "PG.ProteinDescriptions"]
@@ -782,10 +820,10 @@ low_coeff_var_p <- function(df_, pc = 0.01){
 }
 
 
-norm_to_low_coeff <- function(df_, og_df, pc = 0.01, meta_df_, dir_path){
+norm_to_low_coeff <- function(df_, og_df, pc = 0.05, max_p = 5, meta_df_, dir_path, data_cols){
 
   # calculate proteins with lowest coefficient of variation
-  low_coeff_var_res <- low_coeff_var_p(df_, pc = pc)
+  low_coeff_var_res <- low_coeff_var_p(df_, pc = pc, max_p = 5, data_cols)
   low_cv_pro_names <- low_coeff_var_res$names
   low_idx_pro_idx <- low_coeff_var_res$idx
 
