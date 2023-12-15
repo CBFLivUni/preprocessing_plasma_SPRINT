@@ -1,8 +1,6 @@
 library(pmp)
 library(tidyverse)
 
-wd <- r"(C:\Users\alexr\OneDrive\Documents\Work\CBF\SPRINT)"
-
 setwd(wd)
 
 # load data
@@ -197,3 +195,4 @@ plots <- sbc_plot(df = t(log2_df[, data_cols]),
                   classes = meta_df$Cohort,
                   batch = meta_df$Plate,
                   output = "figures/QCRSC/healthyasQC.pdf")
+                  
