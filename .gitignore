@@ -6,11 +6,13 @@
 !missing_count.csv
 !main.R
 !funcs.R
+!check_signal_drift.R
 !sorted_IQR.csv
 !README.md
 
 !*/
 
+!figures/QCRSC/*
 !figures/combat_vsn/*
 !figures/depl_combat_vsn/*
 !figures/depl_hk_vsn/*

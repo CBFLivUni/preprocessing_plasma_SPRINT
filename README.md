@@ -29,7 +29,16 @@ This project performed a number of pre-processing pipelines for plasma data gene
 - ```*_pca_var_imp.png``` are barplots of top contributing proteins to the PCA, coloured by whether these proteins were depleted or not.
 - ```p(1-3)_low_cv.png``` are plot if "housekeeping" proteins were used to batch correct. These plots are the log2 filtered values of the proteins used for this purpose within plate 1, 2 and 3 respectively.
 
+## QC-RSC for Signal Drift and Batch Correction
+- ```check_signal_drift.R``` runs testing of using the [QC-RSC algorithm](https://bioconductor.org/packages/release/bioc/vignettes/pmp/inst/doc/pmp_vignette_signal_batch_correction_mass_spectrometry.html) to correct batch effect and signal drift. 
+- Folder ```QCRSC``` contains the results.
+- The algorithm involves fitting a curve to QC samples to check for, and then attempt to remove, signal drift and batch effect at the same time.
+- There were not enough QC samples in Plate 3 (4 are required) to run the algorithm as is intended. Instead, fitting the curve to healthy samples only and then to all samples was tested.
+- Using healthy samples generally over-corrected for signal drift, worsening data quality.
+- Using all samples, often did not improve signal drift and potentially removed biological variation.
+
 ## Recommendations
+- Attempting to correct for signal drift using QC-RSC seemed to result in poorer data quality.
 - Combat appears to have corrected batch sufficiently, using "housekeeping" proteins does not.
 - Removing depleted proteins (```deplr```), or not, does not seem to have substantially impacted pre-processing, though it may be best to include them during pre-processing to reduce the risk of biasing results. 
 - Performing VSN prior to combat, compared to afterwards, does not impact batch correction, but results in slightly reduced QC protein IQR and therefore may be preferred.
