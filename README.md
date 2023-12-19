@@ -28,6 +28,7 @@ This project performed a number of pre-processing pipelines for plasma data gene
 - ```*_pca_cohort.png``` / ```*_pca_plate.png``` are PCA plots of each sample coloured by cohort/ plate respectively. Missing values are imputed using MissForest.
 - ```*_pca_var_imp.png``` are barplots of top contributing proteins to the PCA, coloured by whether these proteins were depleted or not.
 - ```p(1-3)_low_cv.png``` are plot if "housekeeping" proteins were used to batch correct. These plots are the log2 filtered values of the proteins used for this purpose within plate 1, 2 and 3 respectively.
+ - A linear mixed model was fit for each protein to estimate the contribution of Cohort and Plate. In ```_var_part.png```, A) shows the variance explained by Cohort and Plate of the top 30 proteins ordered by Cohort. B) shows violin plots representing the distribution of variance explained of all proteins.
 
 ## QC-RSC for Signal Drift and Batch Correction
 - ```check_signal_drift.R``` runs testing of using the [QC-RSC algorithm](https://bioconductor.org/packages/release/bioc/vignettes/pmp/inst/doc/pmp_vignette_signal_batch_correction_mass_spectrometry.html) to correct batch effect and signal drift. 

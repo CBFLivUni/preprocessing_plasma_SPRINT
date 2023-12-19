@@ -11,6 +11,8 @@ library(factoextra)
 library(stringr)
 library(vsn)
 library(MultiBaC)
+library(variancePartition)
+library(ggpubr)
 
 plot_missingness <- function(df) {
 
@@ -615,6 +617,41 @@ plot_figures <- function(df_, og_df, meta_df_, data_cols, f_name_prefix, selecte
   plot_deplete(df_)
   ggsave(paste(f_name_prefix, "deplete.png", sep = ""), width = 20)
 
+  # Plot variance importance.
+  # get row names for plotting
+  df_for_varpart <- as.data.frame(t(imp_pca))  # transpose again after missforest
+
+  # add non-data cols
+  sel_idx_only <- og_df[rownames(df_for_varpart), ]
+  df_for_varpart$PG.ProteinDescriptions <- sel_idx_only$PG.ProteinDescriptions
+  df_for_varpart$PG.Genes <- sel_idx_only$PG.Genes
+
+  # cut rownames so fit in plot
+  rownames(df_for_varpart) <-  paste0(substr(df_for_varpart$PG.ProteinDescriptions, 1, 20),
+                          " - ",
+                          df_for_varpart$PG.Genes)
+
+  # recommended cat vars are modelled as random effects
+  form <- ~(1|Plate) + (1|Cohort)
+  var_part <- fitExtractVarPartModel(exprObj = df_to_matrix(df_for_varpart, data_cols),
+                          formula = form,
+                          data = meta_df_)
+
+  vp <- sortCols(var_part, last = "Residuals")
+
+  # top 30 proteins sorted by cohort variance %
+  vp <- vp[order(-vp$Cohort), ]
+
+  # top 30 proteins
+  vp_bars <- plotPercentBars(vp[1:30, ]) + theme(legend.position = "bottom")  #top 30 so we can see some detail
+  vp_violin <- plotVarPart(vp) 
+
+  ggarrange(vp_bars, vp_violin, 
+            labels = c("A", "B"),
+            ncol = 2, nrow = 1)
+
+  ggsave(paste(f_name_prefix, "var_part.png", sep = ""), width = 20)
+
   return(imp_pca)
 }
 
@@ -777,6 +814,39 @@ run_pipelines <- function(pipelines, df_, og_df, meta_df_, data_cols, meta_cols,
     mean_iqr <- mean(iqr_values)
 
     iqr_df <- iqr_df %>% add_row(Method = p, IQR = mean_iqr)
+
+    # Plot variance importance.
+    # get row names for plotting
+    # df_for_varpart <- mf_df
+    # rownames(df_for_varpart) <- df_for_varpart$PG.ProteinDescriptions
+
+    # # cut rownames so fit in plot
+    # rownames(df_for_varpart) <-  paste0(substr(rownames(df_for_varpart), 1, 20),
+    #                         " - ",
+    #                         df_for_varpart$PG.Genes)
+
+    # # recommended cat vars are modelled as random effects
+    # form <- ~(1|Plate) + (1|Cohort)
+    # var_part <- fitExtractVarPartModel(exprObj = df_to_matrix(df_for_varpart, data_cols),
+    #                         formula = form,
+    #                         data = meta_df_)
+
+    # vp <- sortCols(var_part, last = "Residuals")
+
+    # # top 30 proteins sorted by cohort variance %
+    # vp <- vp[order(-vp$Cohort), ]
+
+    # # top 30 proteins
+    # vp_bars <- plotPercentBars(vp[1:30, ]) + theme(legend.position = "bottom")  #top 30 so we can see some detail
+    # vp_violin <- plotVarPart(vp) 
+
+    # ggarrange(vp_bars, vp_violin, 
+    #           labels = c("A", "B"),
+    #           ncol = 2, nrow = 1)
+
+    # f_name_prefix <- paste(dir_path, "/", p, "/", process, "_", sep="")
+    # ggsave(paste(f_name_prefix, "var_part.png", sep = ""), width = 20)
+
   }
   return(iqr_df)
 }
