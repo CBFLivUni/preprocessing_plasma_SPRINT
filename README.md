@@ -1,11 +1,14 @@
-# Pre-processing plasma proteomics for SPRINT
-This project performed a number of pre-processing pipelines for plasma data generated for Sputum and plasma proteomes in response to CFTR therapy (SPRINT).
+# Processing plasma proteomics for SPRINT
+This project contains pre-processing and processing for plasma proteomics for SPRINT. It involved performing a number of pre-processing pipelines followed by DE and GSEA for plasma data generated for Sputum and plasma proteomes in response to CFTR therapy (SPRINT).
+
+# Pre-processing:
 
 ## Running analysis
 - ```main.R``` performs all analysis, initially:
 - All proteins > 20% missing are filtered out.
 - Abundance values are log2 transformed.
 - Analysis pipelines are run on this data, these steps include: performing batch correction using [Combat](https://rdrr.io/bioc/sva/man/ComBat.html) or "housekeeping" proteins (the most abundant proteins with the lowest coefficient of variation within plates), performing normalisation of data - either within batches (prior to batch correction) or across all batches (post-batch correction), and performing these steps with and without removing depleted proteins.
+- ```model_metadata.R``` performs variance partition analysis and saves figures.
 
 ## Results
 - Mean IQR of all proteins in QC samples was calculated following running each pipeline, the results of this are in ```sorted_IQR.csv```.
@@ -44,3 +47,7 @@ This project performed a number of pre-processing pipelines for plasma data gene
 - Removing depleted proteins (```deplr```), or not, does not seem to have substantially impacted pre-processing, though it may be best to include them during pre-processing to reduce the risk of biasing results. 
 - Performing VSN prior to combat, compared to afterwards, does not impact batch correction, but results in slightly reduced QC protein IQR and therefore may be preferred.
 - Therefore, the ```withinvsn_combat``` pipeline would be recommended for further processing. Within these folders, the ```combat_rm_depl_df.csv``` contains the processed data, including missing values, and ```combat_rm_depl_mf_df.csv``` includes the processed data with missing values imputed using MissForest.
+
+# Processing:
+- ```differential_expression.R```, ```funcs_DE.R``` and ```DE_figs.R``` contain differential expression analysis and figures for pre vs post ETI and pre ETI vs healthy and post ETI vs healthy.
+- ```fpsea.R``` runs functional gene set enrichment analysis and produces figures.

@@ -5,10 +5,14 @@
 !.gitignore
 !missing_count.csv
 !main.R
-!funcs.R
+!funcs_preprocess.R
+!funcs_DE.R
 !check_signal_drift.R
 !sorted_IQR.csv
 !README.md
+!DE_figs.R
+!differential_expression.R
+!fpsea.R
 
 !*/
 

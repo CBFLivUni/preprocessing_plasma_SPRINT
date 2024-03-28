@@ -94,7 +94,7 @@ missing_per_sample_bar <- function(df) {
 
 
 CBF_PCA <- function(data, groups, useLabels = F, labels = "",
-      pcs = c(1, 2), type = "scores", scale = T, legendName = "Treatment") {
+      pcs = c(1, 2), type = "scores", scale = T, legendName = "Treatment", ellipse = FALSE) {
 
   # CBF PCA function taken from R for data science course material.
 
@@ -120,9 +120,20 @@ CBF_PCA <- function(data, groups, useLabels = F, labels = "",
     perc_accounted <- summary(pc)$importance[2, pcs] * 100
 
     .e <- environment()
-    p <- ggplot(data = pcdf, aes(x = pc1, y = pc2), environment = .e) +
+
+    if (ellipse) {
+      # adding ellipses around points.
+
+      p <- ggplot(data = pcdf, aes(x = pc1, y = pc2), environment = .e) +
+      geom_point(aes(fill = groups), colour = "black", size = 5.5,
+                 pch = 21) + scale_fill_manual(values = colores, name = legendName) +
+                 stat_ellipse(aes(color=groups), show.legend = FALSE)
+
+    } else {
+      p <- ggplot(data = pcdf, aes(x = pc1, y = pc2), environment = .e) +
       geom_point(aes(fill = groups), colour = "black", size = 5.5,
                  pch = 21) + scale_fill_manual(values = colores, name = legendName)
+    }
 
     if (useLabels)
       p <- p + geom_text_repel(aes(label = labels))
@@ -564,7 +575,7 @@ plot_figures <- function(df_, og_df, meta_df_, data_cols, f_name_prefix, selecte
           pcs = c(1, 2),
           type = "scores",
           scale = T,
-          legendName = "Plate")
+          legendName = "Cohort")
   ggsave(paste(f_name_prefix, "pca_cohort.png", sep = ""))
 
   pheatmap(
@@ -951,4 +962,27 @@ calculate_iqr <- function(x) {
   q <- quantile(x, c(0.25, 0.75), na.rm = TRUE)
   iqr_value <- q[2] - q[1]
   return(iqr_value)
+}
+
+fmt_date <- function(col) {
+  # pass in dataframe row to be formatted as date
+  # using as.date by itself with NA's in column throws too many errors
+  new_col <- vector()
+
+  for (i in 1:nrow(col)){
+
+    old_val <- col[i,]
+
+    if (is.na(old_val)){
+      # if is NA, keep NA
+      new_val <- "NA"
+    } else {
+      # is a date, then change to date as date
+      #browser()
+      new_val <- as.Date(as.numeric(old_val), origin = "1899-12-30")
+    }
+    new_col <- append(new_col, new_val)
+  }
+
+  return(new_col)
 }
