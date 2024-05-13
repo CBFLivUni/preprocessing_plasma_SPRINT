@@ -6,8 +6,6 @@ library(stringr)
 
 source("funcs_preprocess.R")
 
-wd <- r"(C:\Users\alexr\OneDrive\Documents\Work\CBF\SPRINT)"
-
 setwd(wd)
 dir_path <- paste(wd, "/figures", sep = "")
 
